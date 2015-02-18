@@ -3,5 +3,12 @@
     <div class="span8 offset1">
         <p class="lead">{what}</p><br/>
         <p class="text-right">{who}</p>
+        <div class="hollywood" data-average="{average}" data-id ="{id}"></div>
+        <script type="text/javascript">
+            $('.{field}').jRating({
+                maxRate : 5, // highest rating
+                phpPath : '/viewer/rate' // target for the AJAX call
+                }); 
+        </script>
     </div>
 </div>
